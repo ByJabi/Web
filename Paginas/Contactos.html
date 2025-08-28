@@ -6,9 +6,58 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="../index.html"><img src="../Img/boton_inicio.png" alt="Imagen botón inicio" title="Ir al Index" width="30"></a>
+    <a href="../Paginas/Servicios.html"><img src="../Img/boton_servicios.png" alt="Imagen botón Servicios" title="Ir a Servicios" width="30"></a>
     <h2>Bienvenidos a la página de Contactos.</h2>
-    <a href="../index.html">Volver al index</a>
-    <br>
-    <a href="../Paginas/Servicios.html">Ir a servicios</a>
+    <!-- <a href="../index.html">Volver al index</a> -->
+    <!-- <br> -->
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="post">
+        <label for="nombre">Registro de Contactos.</label>
+        <br>
+        <label for="">Documento de identidad: </label>
+        <select name="tipo_documento" id="tipo_documento">
+            <option value="">RC</option>
+            <option value="">TI</option>
+            <option value="">CC</option>
+            <option value="">Pasaporte</option>
+            <option value="">Cédula de extranjería</option>
+            <option value="">Otro</option>
+        </select>
+        <input type="number" placeholder="Digite el número de identidad">
+        <br>
+        <label for="">Nombre y Apellido</label>
+        <input type="text" placeholder="Ingrese sus nombres">
+        <input type="text" placeholder="Ingrese su apellido">
+        <br>
+        <label for="">E-mail</label>
+        <input type="email" placeholder="Ingrese su E-mail">
+        <hr>
+        <h2>Identidad de género</h2>
+        <label for="">Seleccione su identidad de genero</label>
+        <input type="radio" name="genero"><label for="">Femenino</label>
+        <input type="radio" name="genero"><label for="">Masculino</label>
+        <input type="radio" name="genero"><label for="">Binario</label>
+        <input type="radio" name="genero"><label for="">LGTBI+Q</label> 
+        <input type="radio" name="genero"><label for="">Otro</label>
+        <hr>
+        <h2>Hobbies e Intereses</h2>
+        <label for="">Seleccione sus hobbies e intereses</label> <br>
+        <input type="checkbox" name="hobbies"><label for="">Deporte</label> <br>
+        <input type="checkbox" name="hobbies"><label for="">Música</label> <br>
+        <input type="checkbox" name="hobbies"><label for="">Lectura</label> <br>
+        <input type="checkbox" name="hobbies"><label for="">Programar</label> <br>
+        <input type="checkbox" name="hobbies"><label for="">Otros</label> <br>
+        <textarea name="otros_hobbies" rows="4" cols="50" placeholder="Especifique otros hobbies"></textarea>
+        <br>
+        <hr>
+        <h2>Sección registro</h2>
+        <label for="">Usuario</label>
+        <input type="text" maxlength="20" placeholder="Digite su usuario"> <br>
+        <label for="">Contraseña</label> 
+        <input type="password" maxlength="25" placeholder="Digite su contraseña"> <br>
+        <hr>
+        <input type="submit" value="Registrar usuario">
+    </form>
 </body>
 </html>
